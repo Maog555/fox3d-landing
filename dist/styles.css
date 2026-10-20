@@ -107,3 +107,49 @@ body{background:radial-gradient(ellipse 65% 42% at 78% 10%,#2e2722 0,transparent
 @media(max-width:700px){.hero{display:flex;flex-direction:column;gap:0;padding-top:18px;padding-bottom:65px;min-height:0}.hero-copy{order:-1}.hero-panel{order:0;width:100%;min-height:540px;margin:6px 0 22px}.hero-panel-object{width:min(49%,245px)}.hero-panel-shadow{bottom:11%}.product-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:35px}.product-copy{padding:0}.feature-guide{width:100%;min-height:475px}}
 @media(max-width:500px){.hero-panel{min-height:490px}.hero-panel-object{width:48%}}
 @media(max-width:380px){.hero-panel{min-height:450px}.hero-panel-object{width:50%}}
+
+/* Ajustes de composición para portátiles, tabletas y teléfonos. */
+@media(min-width:861px) and (max-width:1290px){
+  .panel-callout{left:52%}
+}
+@media(min-width:701px) and (max-width:860px){
+  .hero{grid-template-columns:minmax(0,1fr);min-height:0;padding-top:62px;padding-bottom:74px;gap:20px}
+  .hero-copy{max-width:650px}
+  .hero-panel{width:100%;min-height:650px}
+  .hero-panel-object{width:min(42%,300px)}
+  .panel-callout{left:85%}
+  .panel-interaction-hint{bottom:0}
+  .product-layout{grid-template-columns:minmax(0,1fr);gap:42px}
+  .product-copy{padding:0}
+  .product-caption{margin-top:32px}
+  .feature-guide{min-height:540px}
+  .feature-guide-screen{width:260px}
+  .feature-guide-list{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .step:last-child{grid-column:1/-1;min-height:210px}
+  .details-layout,.requirements{grid-template-columns:minmax(0,1fr);gap:38px}
+  .detail-list>div{grid-template-columns:150px 1fr}
+}
+@media(max-width:700px){
+  .hero-panel{min-height:600px}
+  .hero-panel-object{width:min(58%,250px)}
+  .panel-callout{left:70%}
+}
+@media(max-width:500px){
+  .hero-panel{min-height:clamp(500px,145vw,590px)}
+  .hero-panel-object{width:min(64%,240px)}
+  .panel-callout{left:55%;width:150px}
+  .panel-interaction-hint{bottom:0}
+}
+@media(max-width:380px){
+  .panel-callout{left:55%;width:138px}
+}
+@media(max-width:319px){
+  .header-inner{gap:8px}
+  .brand{font-size:21px;gap:5px}
+  .brand-mark,.brand-mark img{width:40px;height:40px}
+  .header-cta{font-size:15px;padding:6px 9px}
+  .panel-callout{left:45%;width:130px}
+  .buy-action{min-width:0;width:100%}
+  .buy-action small{max-width:100%}
+}
