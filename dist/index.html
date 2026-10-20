@@ -19,6 +19,7 @@
         <span>FOX <strong>3D</strong></span>
       </a>
       <nav aria-label="Navegación principal">
+        <a href="#explora">Explora el panel</a>
         <a href="#como-funciona">Cómo funciona</a>
         <a href="#detalles">Detalles</a>
       </nav>
@@ -34,15 +35,25 @@
         <p class="lead">Convierte tu imagen en un objeto con volumen, dale movimiento y llévalo a tu edición como vídeo con transparencia.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#compra">Conseguir Fox 3D <span aria-hidden="true">↗</span></a>
-          <a class="button button-secondary" href="#como-funciona">Ver cómo funciona <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="#explora">Explorar el panel <span aria-hidden="true">↓</span></a>
         </div>
         <p class="hero-note">Panel para Windows · Sin After Effects · Exportación local</p>
       </div>
-      <div class="hero-panel" role="img" aria-label="Panel Fox 3D extruido, visto en perspectiva como muestra de su efecto de profundidad">
+      <div class="hero-panel" aria-label="Vista interactiva del panel Fox 3D">
         <div class="hero-panel-shadow" aria-hidden="true"></div>
-        <div class="hero-panel-object" aria-hidden="true">
-          <div class="hero-panel-face"><img src="assets/fox-panel-sample.webp" alt="" width="419" height="882" fetchpriority="high"></div>
+        <div class="hero-panel-object">
+          <div class="hero-panel-face">
+            <img src="assets/fox-panel-sample.webp" alt="Interfaz de Fox 3D con visor, línea de tiempo y estilos de animación" width="419" height="882" fetchpriority="high">
+            <button class="panel-hotspot" style="--zone-left:2%;--zone-top:8%;--zone-width:96%;--zone-height:6%" data-feature="imagen" aria-label="Explicar Añade tu imagen" aria-controls="panel-callout" aria-expanded="false"></button>
+            <button class="panel-hotspot" style="--zone-left:2%;--zone-top:15%;--zone-width:96%;--zone-height:29%" data-feature="visor" aria-label="Explicar Vista 3D" aria-controls="panel-callout" aria-expanded="false"></button>
+            <button class="panel-hotspot" style="--zone-left:2%;--zone-top:45%;--zone-width:96%;--zone-height:11%" data-feature="tiempo" aria-label="Explicar línea de tiempo" aria-controls="panel-callout" aria-expanded="false"></button>
+            <button class="panel-hotspot" style="--zone-left:2%;--zone-top:57%;--zone-width:96%;--zone-height:7%" data-feature="pasos" aria-label="Explicar pasos del panel" aria-controls="panel-callout" aria-expanded="false"></button>
+            <button class="panel-hotspot" style="--zone-left:3%;--zone-top:70%;--zone-width:94%;--zone-height:18%" data-feature="movimiento" aria-label="Explicar estilos de movimiento" aria-controls="panel-callout" aria-expanded="false"></button>
+            <div class="panel-zoom" aria-hidden="true"><img src="assets/fox-panel-sample.webp" alt="" width="419" height="882"></div>
+          </div>
+          <div class="panel-callout" id="panel-callout" role="status" aria-live="polite" hidden></div>
         </div>
+        <span class="panel-interaction-hint">Pasa el cursor o toca los controles <span aria-hidden="true">↗</span></span>
       </div>
     </section>
 
@@ -50,19 +61,24 @@
       <div class="container proof-grid"><span>Silueta con profundidad</span><span>Cuatro movimientos</span><span>Fondo transparente</span><span>Listo para Premiere</span></div>
     </section>
 
-    <section class="section product-section" id="panel" aria-labelledby="panel-title">
+    <section class="section product-section" id="explora" aria-labelledby="panel-title">
       <div class="container product-layout">
         <div class="product-copy">
           <p class="eyebrow">FOX 3D EN ACCIÓN</p>
           <h2 id="panel-title">Todo toma forma<br><em>frente a ti.</em></h2>
-          <p>Pronto podrás ver aquí cómo una imagen cobra volumen, se anima y llega a tu secuencia de Premiere.</p>
-          <a class="text-link" href="#como-funciona">Conoce el flujo <span aria-hidden="true">↗</span></a>
-          <div class="product-caption"><span class="caption-line"></span><span>Espacio reservado para el video<br>de demostración</span></div>
+          <p>Explora los controles del panel desde esta página. Pasa el cursor o toca cada zona de la vista de arriba para descubrir cómo una imagen se convierte en movimiento.</p>
+          <a class="text-link" href="#inicio">Volver al panel <span aria-hidden="true">↗</span></a>
+          <div class="product-caption"><span class="caption-line"></span><span>Vista guiada del panel real<br>de Fox 3D para Premiere Pro</span></div>
         </div>
-        <div class="video-placeholder" role="img" aria-label="Espacio reservado para el próximo video de demostración de Fox 3D">
-          <span class="video-placeholder-top">FOX 3D <span>DEMO / PRÓXIMAMENTE</span></span>
-          <span class="video-placeholder-icon" aria-hidden="true">▶</span>
-          <span class="video-placeholder-bottom">VIDEO DE DEMOSTRACIÓN</span>
+        <div class="feature-guide" aria-label="Funciones del panel Fox 3D">
+          <div class="feature-guide-top"><span>FOX 3D / PANEL</span><span>01 — 04</span></div>
+          <div class="feature-guide-screen"><img src="assets/fox-panel-sample.webp" alt="Captura del panel Fox 3D en Premiere Pro" width="419" height="882" loading="lazy"></div>
+          <div class="feature-guide-list">
+            <div><span>01</span><strong>Importa</strong><small>PNG, JPG o WebP</small></div>
+            <div><span>02</span><strong>Da volumen</strong><small>Ajusta profundidad</small></div>
+            <div><span>03</span><strong>Anima</strong><small>Cuatro movimientos</small></div>
+            <div><span>04</span><strong>Exporta</strong><small>MOV con alfa</small></div>
+          </div>
         </div>
       </div>
     </section>
@@ -93,5 +109,6 @@
   </main>
 
   <footer class="site-footer"><div class="container footer-inner"><span>FOX <strong>3D</strong></span><span>Panel de animación 3D para Premiere Pro</span><a href="#inicio">Volver arriba ↑</a></div></footer>
+  <script src="panel-interaction.js" defer></script>
 </body>
 </html>
