@@ -153,3 +153,14 @@ body{background:radial-gradient(ellipse 65% 42% at 78% 10%,#2e2722 0,transparent
   .buy-action{min-width:0;width:100%}
   .buy-action small{max-width:100%}
 }
+
+/* Precio y enlaces legales de la página de producto. */
+.buy-action .price{font-family:Darumadrop,'Segoe UI',sans-serif;font-size:clamp(38px,4vw,54px);line-height:1;margin:0;color:#27190f}
+.buy-action .price span{display:block;font-family:'Segoe UI',Arial,sans-serif;font-size:15px;font-weight:700;line-height:1.5}
+.buy-section .buy-action .license-summary{max-width:290px;font-size:14px;line-height:1.5;color:#51331d}
+.button-unavailable{cursor:default;opacity:.85}
+.button-unavailable:hover{transform:none;background:#24201d}
+.footer-legal{display:flex;gap:18px;flex-wrap:wrap;margin-left:auto}
+.footer-inner>.footer-legal+a{margin-left:0;white-space:nowrap}
+@media(max-width:900px){.footer-inner{flex-wrap:wrap;padding-block:24px}.footer-legal{order:3;width:100%;margin-left:0}}
+@media(max-width:700px){.footer-inner>.footer-legal+a{margin-left:auto}.footer-legal{gap:12px 18px}}
