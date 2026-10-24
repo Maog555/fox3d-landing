@@ -164,3 +164,47 @@ body{background:radial-gradient(ellipse 65% 42% at 78% 10%,#2e2722 0,transparent
 .footer-inner>.footer-legal+a{margin-left:0;white-space:nowrap}
 @media(max-width:900px){.footer-inner{flex-wrap:wrap;padding-block:24px}.footer-legal{order:3;width:100%;margin-left:0}}
 @media(max-width:700px){.footer-inner>.footer-legal+a{margin-left:auto}.footer-legal{gap:12px 18px}}
+
+/* Identidad del nuevo emblema 3D: naranja vivo, dorado y marfil sobre carbón. */
+:root{--bg:#141210;--panel:#211c18;--panel2:#29221c;--text:#fff8eb;--muted:#c0b7ab;--line:#ffb33a26;--orange:#ff9828;--orange-light:#ffd05e;--gold:#ffc844}
+body{background:radial-gradient(ellipse 70% 34% at 76% 5%,#5b301b55,transparent 78%),radial-gradient(ellipse 65% 30% at 10% 68%,#41231333,transparent 78%),var(--bg)}
+.site-header{background:#171310e8;border-bottom-color:#ffb33a25}
+.brand{gap:7px;color:var(--text)}
+.brand-mark{width:72px;height:56px;flex:none}
+.brand-mark img{width:72px;height:56px;object-fit:contain;filter:drop-shadow(0 3px 11px #ff982844)}
+.brand strong,.site-footer strong{color:var(--gold)}
+.header-cta{border-color:#ffad3b88;color:#ffe0a7;background:#ff982810}
+.header-cta:hover{background:#ff982826}
+.hero-copy .eyebrow::after{content:"";width:40px;height:1px;margin-left:5px;background:linear-gradient(90deg,var(--gold),transparent)}
+.eyebrow-dot{box-shadow:0 0 0 5px #ff982821}
+h1 em,.product-copy h2 em{color:var(--orange)}
+.hero-panel{background:radial-gradient(ellipse at 55% 49%,#6a381e55 0,#24181244 45%,transparent 72%)}
+.hero-watermark{position:absolute;z-index:0;top:5%;right:-2%;width:min(62%,345px);height:auto;opacity:.105;filter:blur(.2px) saturate(1.2);transform:rotate(-12deg);pointer-events:none;user-select:none}
+.hero-panel-shadow{background:#000b}
+.button-primary{background:linear-gradient(135deg,#ffc844 0%,#ff9828 55%,#ed791d 100%);color:#21140a;box-shadow:0 10px 30px #ff8b1c25}
+.button-primary:hover{background:linear-gradient(135deg,#ffe079 0%,#ffac3f 60%,#ff891f 100%)}
+.button-secondary{border-color:#ffbd5b56;color:#ffebd0}
+.button-secondary:hover{background:#ffb44018}
+.proof-strip{background:#1b1713;border-block-color:#ffb33a1d}
+.proof-grid span+span{border-left-color:#ffb33a26}
+.step{background:linear-gradient(150deg,#2b211a,#1e1a17);border-color:#ffb33a2e}
+.step-icon{background:linear-gradient(145deg,#ffcb472a,#ff8c1e12);border-color:#ffbd5b67;border-radius:14px 14px 14px 3px}
+.details-section{background:#1d1915;border-block-color:#ffb33a1a}
+.detail-list,.detail-list>div{border-color:#ffb33a35}
+.product-section{background:radial-gradient(circle at 72% 45%,#65391f54,#211b17 48%,#191613 80%);border-bottom-color:#ffb33a20}
+.feature-guide{border-color:#d9934877;background:radial-gradient(circle at 50% 38%,#704024,#27201b 65%)}
+.feature-guide-list>div{background:#261c17e8;border-color:#ffbf7136}
+.feature-guide-screen{border-color:#e49c52}
+.panel-callout{background:#251c17f5;border-color:#ffbd5b83}
+.panel-zoom{border-color:#ffbd5b}
+.buy-section{background:linear-gradient(112deg,#ffcc4b 0%,#ff9b2b 50%,#e97e20 100%);color:#271607}
+.buy-section .eyebrow{color:#673311}
+.buy-section p:not(.eyebrow){color:#563016}
+.buy-action .button-primary{background:#251711;color:#fff7e8;box-shadow:0 12px 28px #5d2c1236}
+.buy-action .button-primary:hover{background:#3b2418}
+.site-footer{background:#100e0c;border-top:1px solid #ffb33a1b}
+.footer-brand{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}
+.footer-brand img{width:48px;height:37px;object-fit:contain}
+@media(min-width:701px) and (max-width:860px){.hero-watermark{right:5%}}
+@media(max-width:700px){.brand-mark,.brand-mark img{width:58px;height:45px}.brand{font-size:23px}.hero-watermark{right:0;top:8%;width:min(64%,290px)}}
+@media(max-width:420px){.brand-mark,.brand-mark img{width:48px;height:38px}.hero-watermark{opacity:.08}}
